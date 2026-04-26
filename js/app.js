@@ -8,6 +8,7 @@ const modal = document.getElementById("modal");
 const cerrar = document.getElementById("cerrar");
 
 const nombre = document.getElementById("modal-nombre");
+const imagen = document.getElementById("modal-imagen");
 const cientifico = document.getElementById("modal-cientifico");
 const tipo = document.getElementById("modal-tipo");
 const descripcion = document.getElementById("modal-descripcion");
@@ -26,6 +27,7 @@ reptiles.forEach(reptil => {
   // 👇 evento click
   card.addEventListener("click", () => {
     nombre.textContent = reptil.nombre;
+    imagen.src = reptil.imagen;
     cientifico.textContent = reptil.nombreCientifico;
     tipo.textContent = reptil.tipo;
     descripcion.textContent = reptil.descripcion;
