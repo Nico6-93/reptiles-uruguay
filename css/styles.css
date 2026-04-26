@@ -1,0 +1,25 @@
+#contenedor-reptiles{
+
+    border: 1px solid black;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+
+}
+
+img {
+
+    width: fit-content;
+    height: 100px;
+
+}
