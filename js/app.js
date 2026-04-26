@@ -3,11 +3,19 @@ console.log(reptiles);
 
 const contenedor = document.getElementById("contenedor-reptiles");
 
-reptiles.forEach(reptil => {
-    
-    const card = document.createElement("div");
 
-    card.innerHTML = `
+const modal = document.getElementById("modal");
+const cerrar = document.getElementById("cerrar");
+
+const nombre = document.getElementById("modal-nombre");
+const cientifico = document.getElementById("modal-cientifico");
+const tipo = document.getElementById("modal-tipo");
+const descripcion = document.getElementById("modal-descripcion");
+
+reptiles.forEach(reptil => {
+  const card = document.createElement("div");
+
+  card.innerHTML = `
     <div class="card">
       <img src="${reptil.imagen}" alt="${reptil.nombre}" width="150">
       <h3>${reptil.nombre}</h3>
@@ -15,6 +23,20 @@ reptiles.forEach(reptil => {
     </div>
   `;
 
-  contenedor.appendChild(card);
+  // 👇 evento click
+  card.addEventListener("click", () => {
+    nombre.textContent = reptil.nombre;
+    cientifico.textContent = reptil.nombreCientifico;
+    tipo.textContent = reptil.tipo;
+    descripcion.textContent = reptil.descripcion;
 
+    modal.classList.remove("oculto");
+  });
+
+  contenedor.appendChild(card);
+});
+
+// cerrar modal
+cerrar.addEventListener("click", () => {
+  modal.classList.add("oculto");
 });
