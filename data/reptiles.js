@@ -15,7 +15,7 @@ const reptiles = [
     tipo: "Ofidio",
     peligrosa: true,
     descripcion: "Serpiente venenosa de colores llamativos. Posee veneno neurotóxico.",
-    imagen: "img/coral.jpg"
+    imagen: "img/coral.gif"
   },
   {
     id: "musurana",
@@ -33,7 +33,7 @@ const reptiles = [
     tipo: "Saurio",
     peligrosa: false,
     descripcion: "Lagarto grande muy común en Uruguay. Omnívoro y generalmente inofensivo.",
-    imagen: "img/lagarto.jpg"
+    imagen: "img/overo.jpg"
   },
   {
     id: "tortuga",
@@ -42,6 +42,6 @@ const reptiles = [
     tipo: "Quelonio",
     peligrosa: false,
     descripcion: "Tortuga de agua dulce presente en ríos y lagunas.",
-    imagen: "img/tortuga.jpg"
+    imagen: "img/morrocoyo.webp"
   }
 ];
